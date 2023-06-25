@@ -1,4 +1,4 @@
-import { component$, useVisibleTask$ } from '@builder.io/qwik';
+import { component$ } from '@builder.io/qwik';
 import {
   QwikCityProvider,
   RouterOutlet,
@@ -15,9 +15,6 @@ export default component$(() => {
    *
    * Dont remove the `<head>` and `<body>` elements.
    */
-  useVisibleTask$(() => {
-    document.documentElement.setAttribute('data-theme', 'pastel');
-  });
   return (
     <QwikCityProvider>
       <head>
@@ -25,7 +22,10 @@ export default component$(() => {
         <link rel="manifest" href="/manifest.json" />
         <RouterHead />
       </head>
-      <body lang="en">
+      <body
+        lang="en"
+        class="antialiased text-gray-800 dark:bg-black dark:text-gray-400"
+      >
         <RouterOutlet />
         <ServiceWorkerRegister />
       </body>

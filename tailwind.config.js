@@ -4,11 +4,12 @@ module.exports = {
   theme: {
     extend: {},
   },
-  plugins: [require('daisyui')],
-  daisyui: {
-    themes: ['pastel'],
-    base: true, // applies background color and foreground color for root element by default
-    styled: true, // include daisyUI colors and design decisions for all components
-    utils: true,
-  },
+  plugins: [],
 };
+// plugins: [require('daisyui')],
+// daisyui: {
+//   themes: ['pastel'],
+//   base: true, // applies background color and foreground color for root element by default
+//   styled: true, // include daisyUI colors and design decisions for all components
+//   utils: true,
+// },
